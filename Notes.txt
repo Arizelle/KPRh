@@ -1,0 +1,36 @@
+Little TODOs:
+ - Be able to set an offset for your version of a song (to match files)
+ - Make mode: Copy, Paste, Cut
+
+
+Playing chords:
+ - Each Note knows its Chord
+ - Tells the Chord it's being played
+ - If all notes played, Chord is played
+ - Else, miss all
+
+
+Charting Mode controls
+ - Move forward and back - Up/Down Arrow
+ - Each note key
+ - Increase/Decrease chart timescale/hyperspeed - Right/Left
+ - Increase/Decrease play speed - Shift + Right/Left
+ - Start/Stop/Shift phrase (same key?)
+ 	- Hold key to do Phrase Mode - Space
+ 		- Region is defined by holding up to two(?) keys to define the box
+ 		- If it doesn't overlap with a region, one will be made
+ 		- If it does and matches, it will stop the region
+ 		- If it does and doesn't match, it will shift the region
+ - Making a chord
+ 	- Concepting
+ 		- Tap a single key to make the note
+ 		- Tap a chord to make the chord
+ 	- Code
+ 		- On key down, add it to the list of pressed keys
+ 		- If only one held and is released, just makes a note
+ 		- If multiple held:
+	 		- If released in close time, makes a chord
+	 		- If released sequentially, just makes notes
+ - Simpler Making a chord
+ 	- Button down creates notes
+ 	- If continuously held down, extra notes toggle into the chord
